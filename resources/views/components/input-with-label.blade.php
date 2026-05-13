@@ -5,7 +5,7 @@
             <sup>*</sup>
         @endif
     </label>
-    <input class="form-field__input" type="{{ $type }}" id="{{ $id }}" name="{{ $name }}"
+    <input type="{{ $type }}" class="form-field__input" id="{{ $id }}" name="{{ $name }}"
         value="{{ $value }}" @if ($placeholder) placeholder="{{ $placeholder }}" @endif
         @if ($required) required @endif>
     @error($name)
