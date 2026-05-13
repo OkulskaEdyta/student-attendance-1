@@ -32,7 +32,7 @@ class FortifyServiceProvider extends ServiceProvider
         Fortify::loginView(function () {
             $title = ucfirst(__('headings.login_to_private_space'));
 
-            return view('auth.login', compact('title'));
+            return view('auth.logincreate', compact('title'));
         });
         /*
         Fortify::createUsersUsing(CreateNewUser::class);
